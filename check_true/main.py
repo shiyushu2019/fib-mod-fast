@@ -37,8 +37,8 @@ def resume():
 if __name__== "__main__":
 
     log_step=int(1e7+123)
-    #processes=cpu_count()*0.20
-    processes=5
+    processes=1+cpu_count()*0.20
+    #processes=5
     mininterval=2
     chunksize=5000
 
