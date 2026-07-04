@@ -52,6 +52,20 @@ Please navigate to the directory `check_true` and follow these steps:
 pip install gmpy2 tqdm
 python setup.py lib.pyx
 python main.py 1e5
-# Suppose you wish to perform an exhaustive search on data in the range of 0 to 100000.
+# Suppose you wish to perform an exhaustive search on data in the range of 0 to 100000. You are free to change the scale.
 ```
 
+## Comparison with the traditional method
+
+We provide a script to compare the runtime performance of our method with the traditional approach.
+
+If you are interested, please navigate to the `check_fast` directory and run:
+
+```bash
+python main.py
+```
+The script requires three integer inputs: the lower bound, the upper bound of the test range, and the number of repetitions. The three integers should be entered in a single line.
+
+When the execution is finished, it will output the average runtime (in milliseconds) of our method and the traditional method in two separate lines.
+
+Due to interpreter overhead and algorithmic design, results may slightly deviate; feedback and suggestions are welcome.
