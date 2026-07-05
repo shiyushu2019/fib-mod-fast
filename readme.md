@@ -1,4 +1,4 @@
-# Fast computation of modular reduction between two Fibonacci numbers (Fa mod Fb) 
+# Fast Computation of Fibonacci Number Mod Fibonacci Number (Fa mod Fb)
 
 ## Background and Method
 
@@ -25,15 +25,15 @@ If you want to use the above method to solve the $F_a \bmod F_b$ problem, please
 ```bash
 pip install gmpy2
 ```
-Then copy the file fib_mod_fast.py into your directory, and import it using:
+Then copy the file fib-mod-fib.py into your directory, and import it using:
 ```python
-from fib_mod_fast import fun
+from fib-mod-fib import fun
 ```
 The function `fun` takes two positional arguments, which are the indices of the two Fibonacci numbers used for the modular operation. It returns the result of $F_a \bmod F_b$. All inputs and outputs are of type `gmpy2.mpz`.
 
 There is an example below:
 ```python
-from fib_mod_fast import fun
+from fib-mod-fib import fun
 from gmpy2 import mpz
 
 a = mpz(1000)
