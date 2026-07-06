@@ -1,6 +1,5 @@
 # Fast Computation of Fibonacci Number Mod Fibonacci Number (Fa mod Fb)
 
-## Background and Method
 
 For the problem of computing $F_a \bmod F_b$, existing methods typically first compute $F_b$ using fast doubling or matrix exponentiation, and then compute $F_a$ while applying modular reduction by $F_b$ at each step. This approach has a theoretical time complexity of $O(\log n)$.
 
